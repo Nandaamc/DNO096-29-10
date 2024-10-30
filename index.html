@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Aves Chilenas</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+        <link href="style.css" rel="stylesheet"/>
+    </head>
+    <body class="text-bg-dark bg-opacity-75">
+        <div class="collapse text-bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4>Sobre el portafolio</h4>
+                        <p class="text-white">
+                           Chile alberga una gran diversidad de aves que habitan desde las cordilleras hasta las costas y los bosques. Entre las especies más características están los rapaces como el carancho cordillerano, el ágil cernícalo y el majestuoso águila mora, cazadores que controlan poblaciones de pequeños animales. En el sur, destacan el colorido loro choroy y el chucao, símbolo de los bosques húmedos, mientras que el picaflor, con su vuelo único, es un frecuente visitante de jardines. La lechuza blanca y el aguilucho también cumplen un rol en el control de plagas, mientras que aves marinas como el lile y el martín pescador dominan las costas y ríos, respectivamente. Cada una de estas especies contribuye a la riqueza y equilibrio de los ecosistemas chilenos.
+                        </p>
+                    </div>
+
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <h4>Te puede interesar</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="https://www.gochile.cl/es/flora-fauna/" target="_blank" class="text-white">Go Chile-Flora y Fauna</a></li>
+                            <li><a href="https://www.redobservadores.cl/listado-de-centros-de-rehabilitacion-de-fauna-silvestre-en-chile/" class="text-white"> Refugio de aves </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-2" viewBox="0 0 16 16">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        />
+                    </svg>
+                    <strong>Portafolio aves chilenas</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+        <header class="container">
+            <h1 class="display-1 my-3"></h1>
+            <select class="form-select my-4">
+                <option value="todos">Aves Chilenas</option>
+                <option value="carroñero">Aves carroñeras</option>
+                <option value="rapaz">Aves rapaces</option>
+                <option value="acuatica">Aves acuaticas</option>
+                <option value="hervivoro">Aves hervivoras</option>
+            </select>
+
+                  <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+  </ol>
+</nav>
+
+
+        </header>
+
+  
+        <div class="container text-center">
+            <main class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-2 align-items-center"></main>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <script>
+            //unas variables que no varían, que son constantes:
+
+            const nombre = "AVES CHILENAS";
+
+            const autoria = document.querySelector("h1");
+
+            autoria.innerHTML = nombre;
+
+            const principal = document.querySelector("main");
+
+            const seleccion = document.querySelector("select");
+
+            //acá voy por el JSON
+
+            async function astros() {
+                const consulta = await fetch("https://raw.githubusercontent.com/Nandaamc/DNO096-29-10/refs/heads/main/README.md");
+                const data = await consulta.json();
+                console.log(data);
+
+                data.forEach((d, i) => (principal.innerHTML += `
+    <div class="${d.signo} col mb-3">
+        <div class="card h-100 bg-dark text-white shadow-sm-3">
+            <img src="${d.foto}" class="card-img-top" alt="${d.fecha}">
+            <div class="card-body">
+                <p class="card-text">
+                    <a href="single.html?data=${i}" class="link-light link-offset-2 
+                    link-offset-3-hover link-underline 
+                    link-underline-opacity-0 
+                    link-underline-opacity-75-hover
+                    stretched-link">${d.nombre}
+                    </a></p>
+                       <div class="d-flex justify-content-around align-items-center">
+                <small class="text-body-secondary"> ${d.signo}</small>
+                <small class="text-body-secondary"> ${d.fecha}</small>
+              </div>
+            </div>
+        </div>
+    </div>`));
+
+
+                seleccionables();
+            }
+
+            astros().catch((error) => console.error(error));
+
+            //lo que sigue es una función que ejecuto dentro de astros()
+
+            var valor;
+
+            function seleccionables() {
+                seleccion.addEventListener("change", (e) => {
+                    document.querySelectorAll(".col").forEach((t) => t.classList.add("d-none"));
+                    valor = e.target.value;
+                    if (valor !== "todos") {
+                        document.querySelectorAll(`.${valor}`).forEach((t) => t.classList.remove("d-none"));
+                    } else {
+                        document.querySelectorAll("div").forEach((t) => t.classList.remove("d-none"));
+                    }
+                });
+            }
+        </script>
+    </body>
+</html>
