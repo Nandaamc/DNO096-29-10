@@ -1,6 +1,6 @@
 [
     {
-        "nombre": "carancho",
+        "nombre": "Carancho",
         "descripcion": "Este ave rapaz, también conocido como traro, es común en la zona andina. Se distingue por su plumaje marrón oscuro y su hábito de carroñero, aunque también caza pequeños animales. Es una especie adaptable que puede verse en valles y montañas.",
         "fecha": "2023",
         "signo": "carroñero",
@@ -9,7 +9,7 @@
         "github": "https://github.com/Nandaamc"
     },
     {
-        "nombre": "cernicalo",
+        "nombre": "Cernícalo",
         "descripcion": "Un pequeño halcón que se encuentra a lo largo de Chile. Su característica distintiva es su habilidad para cerniéndose en el aire mientras busca presas. Se alimenta de insectos, reptiles y pequeños mamíferos, siendo un cazador muy eficaz.",
         "fecha": "2023",
         "signo": "rapaz",
@@ -18,7 +18,7 @@
         "github": "https://github.com/Nandaamc"
     },
     {
-        "nombre": "loro choroy",
+        "nombre": "Loro choroy",
         "descripcion": "Especie endémica de Chile, el loro choroy habita principalmente en bosques templados del sur. Tiene plumaje verde con una cara roja distintiva, y emite fuertes vocalizaciones. Su dieta incluye semillas y frutos nativos.",
         "fecha": "2023",
         "signo": "hervivoro",
@@ -27,7 +27,7 @@
         "github": "https://github.com/Nandaamc"
     },
     {
-        "nombre": "chucao",
+        "nombre": "Chucao",
         "descripcion": "Un ave pequeña y carismática del sur de Chile, reconocida por su canto resonante y su plumaje rojizo en la zona del pecho. Vive en el sotobosque de los bosques húmedos y se alimenta de insectos y pequeños invertebrados.",
         "fecha": "2023",
         "signo": "hervivoro",
@@ -36,7 +36,7 @@
         "github": "https://github.com/Nandaamc"
     },
     {
-        "nombre": "aguilucho",
+        "nombre": "Aguilucho",
         "descripcion": "Un ave rapaz de tamaño mediano, con plumaje marrón y alas anchas. Se encuentra en zonas abiertas y es un cazador oportunista que se alimenta de pequeños mamíferos y aves.",
         "fecha": "2023",
         "signo": "rapaz",
@@ -45,7 +45,7 @@
         "github": "https://github.com/Nandaamc"
     },
     {
-        "nombre": "aguila mora",
+        "nombre": "Águila mora",
         "descripcion": "Esta majestuosa ave rapaz, de plumaje gris y blanco, habita principalmente en la zona central y sur de Chile. Es una cazadora de roedores y otros animales pequeños, que frecuenta zonas de montaña.",
         "fecha": "2023",
         "signo": "rapaz",
@@ -54,7 +54,7 @@
         "github": "https://github.com/Nandaamc"
     },
     {
-        "nombre": "cauquen",
+        "nombre": "Cauquen",
         "descripcion": "Un ganso nativo de la Patagonia, que habita principalmente en zonas de pastizales y cerca de cuerpos de agua. Es herbívoro y se distingue por su plumaje blanco y negro en algunos casos, o gris en otros.",
         "fecha": "2023",
         "signo": "acuatica",
@@ -63,7 +63,7 @@
         "github": "https://github.com/Nandaamc"
     },
     {
-        "nombre": "lechuza",
+        "nombre": "Lechuza",
         "descripcion": "Con su plumaje pálido y su cara en forma de corazón, la lechuza blanca es una cazadora nocturna que se encuentra en zonas rurales y semiurbanas. Se alimenta de roedores y juega un rol importante en el control de plagas.",
         "fecha": "2023",
         "signo": "productos",
@@ -72,16 +72,16 @@
         "github": "https://github.com/Nandaamc"
     },
     {
-        "nombre": "lile",
+        "nombre": "Lile",
         "descripcion": "Esta pequeña ave marina de color oscuro es común en las costas de Chile. Vive en colonias y se alimenta principalmente de peces pequeños, capturándolos mediante buceos rápidos y ágiles.",
         "fecha": "2023",
-        "signo": "productos",
+        "signo": "acuatica",
         "foto": "https://github.com/user-attachments/assets/788c9b26-f9b6-4170-a86b-d557726c8dff",
         "fotos": ["lile-1.jpg", "lile-2.jpg", "lile-3.jpg"],
         "github": "https://github.com/Nandaamc"
     },
     {
-        "nombre": "loica",
+        "nombre": "Loica",
         "descripcion": "Un ave colorida de pecho rojo y espalda marrón, típica de los campos y pastizales. Conocida por su canto melódico, la loica se alimenta principalmente de insectos y semillas.",
         "fecha": "2023",
         "signo": "hervivoro",
@@ -90,7 +90,7 @@
         "github": "https://github.com/Nandaamc"
     },
     {
-        "nombre": "martin",
+        "nombre": "Martín Pescador",
         "descripcion": "Este ave tiene un plumaje brillante en tonos azulados y es un excelente cazador de peces. Habita en ríos y lagos de Chile, donde se lanza en picada para capturar su alimento.",
         "fecha": "2023",
         "signo": "rapaz",
@@ -99,7 +99,7 @@
         "github": "https://github.com/Nandaamc"
     },
     {
-        "nombre": "picaflor",
+        "nombre": "Picaflor",
         "descripcion": "Existen varias especies en Chile, conocidas por su habilidad de volar en todas direcciones y su dieta de néctar. Sus colores iridiscentes y su vuelo rápido lo convierten en un visitante frecuente de jardines y áreas con flores.",
         "fecha": "2023",
         "signo": "hervivoro",
